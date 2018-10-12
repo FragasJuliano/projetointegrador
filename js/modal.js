@@ -1,5 +1,9 @@
-// Função modal Esportes //
+// Prof° Rafael Speroni //
+// Acadêmico: Juliano Fragas //
+// TSI - Tecnólogo Sistemas para Internet //
+// IFC - Instituto Federal Catarinense Campus Camboriú //
 
+// Função modal Esportes //
        function iniciaModal(modalID) {
          const modal = document.getElementById(modalID); // identificador da variável constante não pode ser alterado //
          modal.classList.add('mostrar');
@@ -14,7 +18,6 @@
           meio.addEventListener('click', () => iniciaModal('modal-noticias')); 
           
 // Função  modal Infomrativos //
-
         function iniciaModal(modalID) {
            const modal = document.getElementById(modalID);
            modal.classList.add('mostrar');
@@ -29,7 +32,6 @@
           ladoD.addEventListener('click', () => iniciaModal('modal-noticias1'));
 
 // Função  modal Clima //
-
         function iniciaModal(modalID) {
            const modal = document.getElementById(modalID);
            modal.classList.add('mostrar');
