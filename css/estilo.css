@@ -240,5 +240,84 @@ strong {
 	margin-top: 20px;
 }
 
+/* Estilização do Modal */
+
+.modal-container {
+	width: 100vw; /* largura total da tela */
+	height: 100vh; /* altura total da tela */
+	background: rgba(0,0,0,.9); /* efeito transparente */
+	position: fixed; /* posição fixa */
+	top: 0px; /* para aparecer em cima da página */
+	left: 0px; /* para aparecer em cima da página */
+	z-index: 2000; /* para ficar em cima de tudoo conteudo da página */
+	display: none; /* esconder o modal usando (none) */
+	justify-content: center; /* alinhamento na vertical */
+	align-items: center; /* alinhamento na horizontal */
+}
+
+.modal {
+	background: white;
+	width: 80%;
+	min-width: 300px;
+	padding: 40px;
+	border: 5px solid #414141; /* borda do modal */
+	box-shadow: 0 0 0 5px white; /* aparencia de uma segunda borda, com uma sombra */
+	position: relative;
+	border-radius: 15px; /* para arrendondar a janela modal */
+}
+
+.modal h1 {
+	font-family: Trebuchet MS; sans-serif;
+	font-size: 32px;
+	color: black;
+	text-align: center;
+}
+
+.modal p {
+	text-align: center;
+	font-size: 29px;
+	font-family: Trebuchet MS; sans-serif;
+	color: #A6AA9C;
+}
+
+/* botão fechar */
+
+.fechar {
+	position: absolute;
+	top: -30px;
+	right: -30px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 4px solid white;
+	background: #414141;
+	color: white;
+	font-family: Trebuchet MS; sans-serif;
+	cursor: pointer;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+	font-size: 1.2em;
+}
+
+.modal-container.mostrar {
+	display: flex;
+}
+
+/* Animação da janela modal */
+
+@keyframes modal {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -60px, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.mostrar .modal {
+	animation: modal .3s;
+}
+
 
 
