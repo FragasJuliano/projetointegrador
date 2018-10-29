@@ -1,0 +1,106 @@
+<!--
+   Acadêmico: Juliano Fragas
+   TSI - Tecnólogo Sistemas para Internet
+   IFC - Instituto Federal Catarinense Campus Camboriú
+   Programação Web - Prof° Rafael Speroni
+-->
+<!DOCTYPE html>
+<html lang="br-pt">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Portal de Notícias Cidade Nova</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+      <link rel="shortcut icon" href="imagens/megaphone.png">
+      <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	</head>
+
+ <body>
+   <div class="container">
+
+	<!-- Cabeçalho -->
+
+	<header>
+		<img src="imagens/megaphone.png" width="80" height="80" />
+		<h1>PNCN</h1>
+		<h2>Portal de Notícias Cidade Nova</h2>		
+	</header>
+
+	<!-- Parte Principal -->
+
+	<main>
+         <!-- Menu -->
+         <nav class="menu">
+         	<ul>
+         		<li><a href="index.html">Início</a></li>
+         		<li><a href="curiosidades.html">Curiosidades</a></li>
+         		<li><a href="#">Serviços</a></li>
+         		<li><a href="#">Contato</a></li>
+         	</ul>
+         </nav>
+
+         <!-- divisões de Notícias -->
+        <div class="todas-noticias">
+         <div class="ladoE">
+         	<img alt="ícone Informativos" src="imagens/barroso.png" width="250" height="250" />
+         	<h1>Clube Náutico Almirante Barroso</h1>
+         </div>
+
+         <div class="meio">
+         	<img alt="ícone de esportes" src="imagens/marciliodias.jpg" width="250" height="250" />
+         	<h1>Clube Náutico Marcílio Dias</h1>
+         </div>
+
+         <div class="ladoD">
+         	<img alt="ícone do tempo" src="imagens/matriz.jpg" width="250" height="250" />
+         	<h1>Igreja Matriz Itajaí</h1>
+         </div>
+      </div>
+	  </div>		
+	</main>
+
+	<!-- Rodapé -->
+	<footer>
+		<strong>Todos os direitos reservados | Juliano Fragas</strong>
+	</footer>
+   
+   <!-- Modal -->
+   <div  id="modal-noticias" class="modal-container">
+      <div class="modal">
+         <button class="fechar">X</button>
+         <h1>Clube Náutico Marcílio Dias</h1>
+         <p> O Marcílio foi o quinto clube náutico a ser fundado em Santa Catarina. Antes do Rubro-Anil existiam apenas Riachuelo, Martinelli e Florianópolis (depois rebatizado como Aldo Luz), da Capital do Estado, e o Lauro Carneiro, de Laguna. O primeiro presidente foi Ignácio Mascarenhas Passos, que no dia 16 de abril de 1919 enviou, através de uma carta ao Governador do Estado, Dr. Hercílio Luz, a comunicação da criação do clube.</p>
+
+         
+      </div>
+   </div>
+   <div  id="modal-noticias1" class="modal-container">
+      <div class="modal">
+         <button class="fechar">X</button>
+         <h1>Clube Náutico Almirante Barroso</h1>
+         <p>A história do Barroso começa em 1919, e tem uma relação íntima com o mar e os rios que abraçam Itajaí. O Clube foi fundado no dia 11 de maio, em reunião no “Grande Hotel” com cerca de 40 sócios para a prática do remo.
+
+         O surgimento do Almirante partiu de uma desavença com seu irmão um pouquinho mais velho, o Marcílio Dias. Parte dos sócios não concordava com a eleição da Madrinha dos dois primeiros barcos, chamados “Yara” e “Yarê”. A votação que terminou em empate entre Marieta de Moro e Virgínia Fontes, acabou pela escolha da primeira candidata e a demissão de quase metade dos sócios.
+
+         A pedra fundamental da primeira sede foi lançada exatamente no dia 29 de junho de 1919 e era localizada na Rua Pedro Ferreira. A inauguração aconteceu pouco depois, em 1920, onde os atletas se reuniam para confraternizações e práticas esportivas.  A competente equipe de remo ficou no topo dos campeonatos estaduais nos anos de 1920, 1921, 1927 e 1928.
+         </p>     
+      </div>
+   </div>
+   <div  id="modal-noticias3" class="modal-container">
+      <div class="modal">
+         <button class="fechar">X</button>
+         <h1>Igreja Matriz Itajaí</h1>
+         <p>Igreja Matriz do Santíssimo Sacramento é o maior monumento artístico e cultural da cidade de Itajaí, Santa Catarina, verdadeiramente seu cartão postal.
+         A Igreja Matriz foi inaugurada em 15 de novembro de 1955 e a sua conclusão devido ao trabalho e dedicação do então vigário Monsenhor Vandelino Hobbold.
+         A pedra fundamental foi lançada em 1940 pelo vigário Pe. José Locks, segundo o projeto do arquiteto alemão Simão Gramlich, o construtor de inúmeras igrejas catarinenses.
+         Seus frontais atingem 50 metros de altura. Na sua construção foram utilizados 700 mil tijolos, artisticamente organizados numa área de 30 metros de largura por 60 metros de comprimento.</p>     
+      </div>
+   </div>
+
+   <!-- Chamando o javascript, aconselhado por no final do corpo para reduzir o tempo de carregamento da página. -->
+   <script type="text/javascript" src="js/modal.js"></script>
+
+ </body>
+</html>
