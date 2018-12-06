@@ -1,0 +1,197 @@
+<!--
+   Acadêmico: Juliano Fragas
+   TSI - Tecnólogo Sistemas para Internet
+   IFC - Instituto Federal Catarinense - Campus Camboriú
+   Programação Web - Prof° Rafael Speroni
+-->
+<!DOCTYPE html>
+<html lang="br-pt">
+	<head>
+  		<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Portal de Notícias Cidade Nova</title>
+    <!-- LINK PARA POR O ÍCONE NA PÁGINA -->
+      <link rel="shortcut icon" href="imagens/megaphone.png">
+    <!-- LINK PARA GOOGLE FONTES -->
+      <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- BOOSTRAP 4.1.3 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- lINK PARA CHAMAR A A FOLHA DE ESTILO CSS -->
+      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+
+ <body>
+   <div class="container-fluido">
+     <!-- CABEÇALHO -->
+     <header>
+           <!-- Uma barra de navegação horizontal cinza que se torna vertical em telas pequenas -->
+           <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+             <img src="imagens/megaphone.png" width="50" height="50">
+             <a href="index.html" class="navbar-brand">Portal de Notícias Cidade Nova</a> 
+             <!-- Links -->
+             <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Curiosidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="avaliacao.html">Avaliação</a>
+              </li>
+            </ul>
+            <form class="form-inline" action="/action_page.php">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </nav>
+
+        </header>
+
+        <!-- PARTE PRINCIPAL -->
+        <main id="principal">
+          <!-- NOTÍCIA 1 -->
+          <div class="card" style="width:500px">
+            <img class="card-img-top rounded" src="imagens/guarda1.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Guarda do Embaú</h4>
+              <p class="card-text">Venha conhecer essa maravilha!</p>
+              <!-- Botão para abrir o modal -->
+              <button type="button" class="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal">
+                <a data-toggle="tooltip" data-placement="right" title="Click Aqui!">Saiba mais</a>
+              </button>
+
+              <!-- O Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Cabeçalho Modal -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Guarda do Embaú</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Corpo modal -->
+                    <div class="modal-body">
+                      O encanto da Guarda do Embaú vai além da bela praia com ondas perfeitas. A vila é formada por dezenas de ruas de areais com pousadas de charme, restaurantes e barzinhos rústicos que agitam a noite do pequeno vilarejo. Trilhas ecológicas, praias desertas, mirantes, piscinas naturais, rios e o místico Vale da Utopia são outras atrações que o turista pode conhecer enquanto estiver na região.
+                    </div>
+
+                    <!-- Rodapé modal -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SEGUNDA NOTICIA -->
+          <div class="card c1" style="width:500px">
+            <img class="card-img-top rounded" src="imagens/cabecudas.jpg" style="height: 355px"  alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Praia de Cabeçudas</h4>
+              <p class="card-text">Venha conhecer essa maravilha!</p>
+              <!-- Botão para abrir o modal -->
+              <button type="button" class="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal1">
+                <a data-toggle="tooltip" data-placement="right" title="Click Aqui!">Saiba mais</a>
+              </button>
+
+              <!-- O Modal -->
+              <div class="modal" id="myModal1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Cabeçalho Modal -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Praia de Cabeçudas | Itajaí/SC</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Corpo modal -->
+                    <div class="modal-body">
+                      O mar calmo atrai famílias com crianças. O bairro, agradável, é repleto de casarões. No canto da praia fica o farol de Cabeçudas.
+                    </div>
+
+                    <!-- Rodapé modal -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NOTÍCIA 3 -->
+        <div class="card" style="width:1100px">
+          <img class="card-img-top rounded" src="imagens/imatriz.jpg" style="height: 960px;" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Igreja Matriz</h4>
+            <p class="card-text">Venha conhecer essa maravilha!</p>
+            <!-- Botão para abrir o modal -->
+            <button type="button" class="btn btn-primary bg-dark" data-toggle="modal" data-target="#myModal2">
+              <a data-toggle="tooltip" data-placement="right" title="Click Aqui!">Saiba mais</a>
+            </button>
+
+            <!-- O Modal -->
+            <div class="modal" id="myModal2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Cabeçalho Modal -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Igreja Matriz</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Corpo modal -->
+                  <div class="modal-body">
+                    Em 1940 a igreja foi projetada por um arquiteto alemão chamado Simão Gramlich e construída pelo Padre José Locks, tendo sua inauguração 15 anos após o início das obras. Sua arquitetura é um mesclado entre o gótico e o romântico que impressiona a todos, e por isso se tornou em dos cartões-postais da cidade.
+                    Seu interior também revela inúmeras belezas com paredes e tetos ilustradas com pinturas feitas pelos italianos Emilio Sessa e Aldo Locatelli. Além dos belos 55 vitrais com passagens bíblicas, esculturas, detalhes folheados a ouro por toda a parte interna da igreja e os seus sinos europeus.
+                  </div>
+                  <!-- Rodapé modal -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- RODAPÉ -->
+      <footer>
+        <strong>Todos os direitos reservados | Juliano Fragas</strong>
+      </footer>
+    </div>
+    
+    <!-- CHAMANDO O JAVASCRIPT, ACONSELHADO POR NO FINAL PARA NÃO DEMORAR PARA CARREGAR. -->
+    <!--  <script type="text/javascript" src="js/modal.js"></script> -->
+    <script type="text/javascript" src="js/aula.js"></script>
+    <!--<script type="text/javascript" src="js/json.js"></script> -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- BOOSTRAP 4 JS -->
+    <script type="text/javascript" src="js/tool.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>

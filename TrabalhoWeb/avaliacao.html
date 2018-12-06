@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+	<head>
+  		<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Portal de Notícias Cidade Nova</title>
+    <!-- LINK PARA POR O ÍCONE NA PÁGINA -->
+      <link rel="shortcut icon" href="imagens/megaphone.png">
+    <!-- LINK PARA GOOGLE FONTES -->
+      <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- BOOSTRAP 4.1.3 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- lINK PARA CHAMAR A A FOLHA DE ESTILO CSS -->
+      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+
+ <body>
+   <div class="container-fluido">
+     <!-- CABEÇALHO -->
+     <header>
+       <!-- Uma barra de navegação horizontal cinza que se torna vertical em telas pequenas -->
+       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+         <img src="imagens/megaphone.png" width="50" height="50">
+         <a href="index.html" class="navbar-brand">Portal de Notícias Cidade Nova</a> 
+         <!-- Links -->
+         <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Curiosidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="avaliacao.html">Avaliação</a>
+          </li>
+        </ul>
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </nav>
+
+    </header>
+
+    <!-- PARTE PRINCIPAL -->
+    <main>
+      <div class="avaliacao">
+        <div class="card" style="width:800px">
+          <img class="card-img-top" src="imagens/logoIfc.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Avaliação Programação Web <small>04/12/2018</small></h4>
+            <p class="card-text">jQuery - Boostrap</p>
+            <!-- Botão para abrir os conteúdos -->
+            <button class="btn btn-dark" id="mostrar">
+              <a data-toggle="tooltip" data-placement="right" title="Click Aqui!">Mostrar</a>
+            </button>
+            <button class="btn btn-dark" id="esconder">
+              <a data-toggle="tooltip" data-placement="right" title="Click Aqui!">Esconder</a>
+            </button>
+          </div>
+          <!-- CONTEUDO PARA MOSTRAR -->
+          <div id="elemento">
+            <h2>Juliano Fragas TSI18</h2>
+            <p id="p1"><dl><dt>&nbsp;&nbsp;&nbsp;&nbsp;Programação Web:</dt></dl>&nbsp;&nbsp;&nbsp; As linguagens de programação web são utilizadas especificamente para o desenvolvimentos das camadas de apresentação e de lógica de negócio de web sites, portais e aplicações web em geral.</p>
+            <p id="p2"><dl><dt>&nbsp;&nbsp;&nbsp;&nbsp;Web Design:</dt></dl>&nbsp;&nbsp;&nbsp; A tarefa do web designer é a elaboração estética e funcional e a manutenção de um web site. O web designer deve ter a compreensão da aplicação em mídia eletrônica de disciplinas como HTML/XHTML, CSS, JavaScript/DHTML, Flash etc. e deve ter conhecimento no uso de software de desenvolvimento voltado para a web.</p>
+            <p id="p3"><dl><dt>&nbsp;&nbsp;&nbsp;&nbsp;Boostrap:</dt></dl>&nbsp;&nbsp;&nbsp; O Bootstrap é uma ferramenta gratuita para desenvolvimento HTML, CSS e JS. Crie protótipos rápidamente ou aplicações completas com nossas variáveis e mixins Sass, sistemas de grid responsivo, componentes pré-construídos e poderosos plugins com jQuery.</p>
+          </div>
+          <!-- CONTEUDO PROFESSOR -->
+          <div class="professor">
+           <div class="media border p-3">
+            <img src="imagens/professor.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px; height: 100px;">
+            <div class="media-body">
+              <h4>Rafael Speroni </br><small>IFC Instituto Federal Catarinense - Campus Camboriú</small></h4>
+              <p class="card-text">Programação Web - Web Design</p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- RODAPÉ -->
+      <footer>
+        <strong>Todos os direitos reservados | Juliano Fragas</strong>
+      </footer>
+    </div>
+    
+    <!-- CHAMANDO O JAVASCRIPT, ACONSELHADO POR NO FINAL PARA NÃO DEMORAR PARA CARREGAR. -->
+    <!--  <script type="text/javascript" src="js/modal.js"></script> -->
+    <script type="text/javascript" src="js/aula.js"></script>
+    <!--<script type="text/javascript" src="js/json.js"></script> -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- BOOSTRAP 4 JS -->
+    <script type="text/javascript" src="js/tool.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>
